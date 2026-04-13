@@ -1,0 +1,25 @@
+# Python кэш
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Виртуальное окружение
+.venv/
+env/
+venv/
+ENV/
+
+# Переменные окружения (Секреты)
+.env
+
+# Базы данных (если появятся локальные файлы sqlite)
+*.sqlite3
+*.db
+
+# Специфичное для uv
+.python-version
+
+# IDE (VS Code / PyCharm)
+.vscode/
+.idea/
