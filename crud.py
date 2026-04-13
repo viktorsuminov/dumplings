@@ -19,7 +19,7 @@ async def get_shops(
 ) -> List[models.Shop]:
     query = select(models.Shop)
     if active_only:
-        query = query.where(models.Shop.is_active == True)
+        query = query.where(models.Shop.is_active == True) # noqa: E712
     query = query.offset(skip).limit(limit)
     result = await db.execute(query)
     return result.scalars().all()
