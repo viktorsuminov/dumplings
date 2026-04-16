@@ -10,3 +10,6 @@ uv sync
 
 Далее запустить приложение можно командой:
 uv run uvicorn main:app --reload
+
+Чтобы запустить контейнер с базой выполните команду:
+docker compose up -d
